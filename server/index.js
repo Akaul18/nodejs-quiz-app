@@ -4,6 +4,8 @@ const bodyParser = require("body-parser");
 const port = process.env.PORT || 3000;
 const app = express();
 
+app.use(bodyParser.json({ urlencoded: false }));
+
 app.set("json spaces", 2); //remove this line when app is in prod
 
 app.use(require("./routes"));

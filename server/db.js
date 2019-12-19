@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 
 const startDb = () => {
   mongoose
-    .connect("mongodb://localhost:27017/me", {
+    .connect("mongodb://localhost:27017/quizapp", {
       useNewUrlParser: true,
       keepAlive: 1,
       useUnifiedTopology: true
